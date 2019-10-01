@@ -3,9 +3,7 @@ import './App.css';
 import Post from './components/Post';
 import PostForm from './components/PostForm';
 import {Provider} from 'react-redux';
-import {createStore, applyMiddleware} from 'redux';
-
-const store = createStore(() => [],{}, applyMiddleware());
+import store from './components/store';
 
 function App() {
   return (
